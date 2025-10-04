@@ -1,0 +1,11 @@
+---
+description: my technical stack
+globs: 
+alwaysApply: false
+---
+
+▲ @Next.js for app and landing page
+- 🔋 @Supabase for DB & Auth
+- 📩 @Resend (optional) to email user when headshots are ready
+- ⭐️ @Shadcn with @Tailwind CSS for styles
+- ▲ @Vercel
