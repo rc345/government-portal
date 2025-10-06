@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Globe, Menu, X } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export function Navigation() {
@@ -13,8 +14,8 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-amber-600 rounded-lg flex items-center justify-center">
-              <Globe className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
+              <Image src="/ablakwa_logo.png" alt="Site logo" width={40} height={40} priority />
             </div>
             <div>
               <h1 className="font-bold text-lg text-gray-900">Hon. Minister</h1>

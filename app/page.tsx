@@ -78,12 +78,8 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             {/* Left - Logo/Name */}
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-red-600 via-yellow-500 to-green-600 rounded-lg flex items-center justify-center p-1">
-                <img 
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23FFD700'/%3E%3Cpath d='M50 20 L55 35 L70 35 L58 45 L63 60 L50 50 L37 60 L42 45 L30 35 L45 35 Z' fill='%23000'/%3E%3C/svg%3E"
-                  alt="Ghana Coat of Arms" 
-                  className="w-6 h-6"
-                />
+              <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
+                <Image src="/ablakwa_logo.png" alt="Site logo" width={40} height={40} priority />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Hon. Samuel Okudzeto Ablakwa</h1>
