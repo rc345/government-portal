@@ -14,8 +14,8 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
-              <Image src="/ablakwa_logo.png" alt="Site logo" width={40} height={40} priority />
+            <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
+              <Image src="/logo_alakwa.png" alt="Site logo" width={48} height={48} priority />
             </div>
             <div>
               <h1 className="font-bold text-lg text-gray-900">Hon. Minister</h1>
