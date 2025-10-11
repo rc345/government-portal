@@ -321,12 +321,12 @@ export default function PlatformPage() {
       </section>
 
       {/* Anti-Corruption Initiatives */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-green-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-amber-600">Transparency & Accountability</Badge>
             <h2 className="text-3xl font-bold mb-4">Anti-Corruption Agenda</h2>
-            <p className="text-blue-100 max-w-2xl mx-auto">
+            <p className="text-green-100 max-w-2xl mx-auto">
               Leading the fight against corruption through transparent governance and accountability measures.
             </p>
           </div>

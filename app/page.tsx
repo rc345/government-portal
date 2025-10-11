@@ -554,7 +554,7 @@ export default function HomePage() {
       </section>
 
       {/* Personal Information */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-green-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-amber-600">Personal Profile</Badge>
@@ -566,32 +566,32 @@ export default function HomePage() {
                 <Calendar className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Born</h3>
-              <p className="text-blue-200 text-sm">August 11, 1980</p>
-              <p className="text-blue-200 text-sm">Aveyime-Battor, Volta Region</p>
+              <p className="text-green-200 text-sm">August 11, 1980</p>
+              <p className="text-green-200 text-sm">Aveyime-Battor, Volta Region</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Family</h3>
-              <p className="text-blue-200 text-sm">Married to Nuhela Seidu</p>
-              <p className="text-blue-200 text-sm">One daughter</p>
+              <p className="text-green-200 text-sm">Married to Nuhela Seidu</p>
+              <p className="text-green-200 text-sm">One daughter</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Languages</h3>
-              <p className="text-blue-200 text-sm">English, Ewe</p>
-              <p className="text-blue-200 text-sm">Christianity</p>
+              <p className="text-green-200 text-sm">English, Ewe</p>
+              <p className="text-green-200 text-sm">Christianity</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Education</h3>
-              <p className="text-blue-200 text-sm">Harvard, University of London</p>
-              <p className="text-blue-200 text-sm">University of Ghana, Leicester</p>
+              <p className="text-green-200 text-sm">Harvard, University of London</p>
+              <p className="text-green-200 text-sm">University of Ghana, Leicester</p>
             </div>
           </div>
         </div>

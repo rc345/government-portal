@@ -377,12 +377,12 @@ export default function AboutPage() {
       </section>
 
       {/* Vision Statement */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-green-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-amber-600">Vision Statement</Badge>
             <h2 className="text-3xl font-bold mb-8">Our Diplomatic Vision</h2>
-            <blockquote className="text-xl italic mb-8 text-blue-100">
+            <blockquote className="text-xl italic mb-8 text-green-100">
               "To position Ghana as a leading voice in international affairs, championing peace, democracy, and
               sustainable development while strengthening partnerships that benefit our people and contribute to global
               prosperity."
