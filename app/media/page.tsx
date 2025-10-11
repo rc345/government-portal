@@ -250,12 +250,12 @@ export default function MediaPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+      <section className="py-12 bg-gradient-to-r from-green-900 to-green-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-amber-600">Media Gallery</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Visual Documentation</h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-green-100">
               Explore moments from diplomatic engagements, community interactions, and official functions.
             </p>
           </div>
@@ -381,7 +381,7 @@ export default function MediaPage() {
                         variant="secondary"
                         className={`text-xs font-medium ${
                           item.category === "meetings"
-                            ? "bg-blue-100 text-blue-700"
+                            ? "bg-green-100 text-green-700"
                             : item.category === "events"
                               ? "bg-green-100 text-green-700"
                               : item.category === "conferences"

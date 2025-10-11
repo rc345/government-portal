@@ -186,7 +186,7 @@ export default function MediaDetailPage({ params }: PageProps) {
                     <Badge
                       className={`${
                         item.category === "meetings"
-                          ? "bg-blue-100 text-blue-700"
+                          ? "bg-green-100 text-green-700"
                           : item.category === "events"
                             ? "bg-green-100 text-green-700"
                             : item.category === "conferences"

@@ -125,12 +125,12 @@ export default function AchievementsPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-green-900 to-green-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-amber-600">Track Record</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Key Achievements</h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-green-100">
               Demonstrating tangible results in diplomatic excellence, service delivery, and national development.
             </p>
           </div>
@@ -181,7 +181,7 @@ export default function AchievementsPage() {
                       <div className="flex items-center gap-3 mb-4">
                         <Badge 
                           className={`${
-                            achievement.category === 'Digital Innovation' ? 'bg-blue-100 text-blue-800' :
+                            achievement.category === 'Digital Innovation' ? 'bg-green-100 text-green-800' :
                             achievement.category === 'Economic Diplomacy' ? 'bg-green-100 text-green-800' :
                             achievement.category === 'International Relations' ? 'bg-purple-100 text-purple-800' :
                             'bg-amber-100 text-amber-800'
@@ -191,7 +191,7 @@ export default function AchievementsPage() {
                         </Badge>
                         <Badge 
                           variant="outline" 
-                          className={achievement.status === 'Completed' ? 'border-green-500 text-green-700' : 'border-blue-500 text-blue-700'}
+                          className={achievement.status === 'Completed' ? 'border-green-500 text-green-700' : 'border-amber-500 text-amber-700'}
                         >
                           {achievement.status}
                         </Badge>

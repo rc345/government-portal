@@ -112,8 +112,8 @@ export default function ContactPage() {
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Users className="w-6 h-6 text-blue-600" />
+                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Users className="w-6 h-6 text-green-600" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-2">North Tongu Constituency Office</h3>
@@ -203,12 +203,12 @@ export default function ContactPage() {
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageSquare className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MessageSquare className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-gray-900">Social Media</h3>
                 <p className="text-gray-600 mb-4">Follow and message us on our official social media channels.</p>
-                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
+                <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent">
                   Follow Us
                 </Button>
               </CardContent>
