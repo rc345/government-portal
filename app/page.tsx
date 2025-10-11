@@ -103,9 +103,19 @@ export default function HomePage() {
 
           {/* Navigation */}
           <nav className="flex justify-center space-x-8 mt-4 border-t pt-4">
-            <Link href="/" className="text-amber-600 font-medium border-b-2 border-amber-600 pb-1">
-              Home
-            </Link>
+            <div className="relative group">
+              <Link href="/" className="text-amber-600 font-medium border-b-2 border-amber-600 pb-1">
+                Home
+              </Link>
+              <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-amber-50 hover:text-amber-600 rounded-t-md">
+                  Home
+                </Link>
+                <Link href="/home2" className="block px-4 py-2 text-gray-700 hover:bg-amber-50 hover:text-amber-600 rounded-b-md">
+                  Home 2
+                </Link>
+              </div>
+            </div>
             <Link href="/platform" className="text-gray-600 hover:text-amber-600 font-medium transition-colors">
               Our Platform
             </Link>
