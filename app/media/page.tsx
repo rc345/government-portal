@@ -385,7 +385,7 @@ export default function MediaPage() {
                             : item.category === "events"
                               ? "bg-green-100 text-green-700"
                               : item.category === "conferences"
-                                ? "bg-purple-100 text-purple-700"
+                                ? "bg-green-100 text-green-700"
                                 : item.category === "visits"
                                   ? "bg-orange-100 text-orange-700"
                                   : "bg-gray-100 text-gray-700"

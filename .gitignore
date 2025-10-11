@@ -112,3 +112,6 @@ uploads/
 # Temporary files
 tmp/
 temp/
+
+# YoYo AI version control directory
+.yoyo/

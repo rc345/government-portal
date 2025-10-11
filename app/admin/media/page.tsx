@@ -134,9 +134,9 @@ export default function MediaManagement() {
   const getFileIcon = (type: string) => {
     switch (type) {
       case "image":
-        return <ImageIcon className="w-5 h-5 text-blue-600" />
+        return <ImageIcon className="w-5 h-5 text-amber-600" />
       case "video":
-        return <Video className="w-5 h-5 text-purple-600" />
+        return <Video className="w-5 h-5 text-green-600" />
       case "document":
         return <File className="w-5 h-5 text-green-600" />
       default:
@@ -182,7 +182,7 @@ export default function MediaManagement() {
                 <p className="text-sm font-medium text-gray-600">Total Files</p>
                 <p className="text-2xl font-bold text-gray-900">{mediaItems.length}</p>
               </div>
-              <File className="w-8 h-8 text-blue-600" />
+              <File className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -208,7 +208,7 @@ export default function MediaManagement() {
                   {mediaItems.filter((item) => item.type === "video").length}
                 </p>
               </div>
-              <Video className="w-8 h-8 text-purple-600" />
+              <Video className="w-8 h-8 text-green-600" />
             </div>
           </CardContent>
         </Card>

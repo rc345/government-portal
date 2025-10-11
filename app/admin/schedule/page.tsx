@@ -159,7 +159,7 @@ export default function ScheduledPosts() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case "scheduled":
-        return "bg-blue-100 text-blue-800"
+        return "bg-amber-100 text-amber-800"
       case "published":
         return "bg-green-100 text-green-800"
       case "failed":
@@ -174,7 +174,7 @@ export default function ScheduledPosts() {
   const getStatusIcon = (status: string) => {
     switch (status) {
       case "scheduled":
-        return <Clock className="w-4 h-4 text-blue-600" />
+        return <Clock className="w-4 h-4 text-amber-600" />
       case "published":
         return <CheckCircle className="w-4 h-4 text-green-600" />
       case "failed":
@@ -189,7 +189,7 @@ export default function ScheduledPosts() {
   const getTypeColor = (type: string) => {
     switch (type) {
       case "news":
-        return "bg-purple-100 text-purple-800"
+        return "bg-green-100 text-green-800"
       case "social":
         return "bg-orange-100 text-orange-800"
       case "announcement":
@@ -235,9 +235,9 @@ export default function ScheduledPosts() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Total Scheduled</p>
-                <p className="text-2xl font-bold text-blue-600">{statusCounts.scheduled}</p>
+                <p className="text-2xl font-bold text-amber-600">{statusCounts.scheduled}</p>
               </div>
-              <Clock className="w-8 h-8 text-blue-600" />
+              <Clock className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -279,9 +279,9 @@ export default function ScheduledPosts() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Recurring</p>
-                <p className="text-2xl font-bold text-purple-600">{recurringPosts}</p>
+                <p className="text-2xl font-bold text-green-600">{recurringPosts}</p>
               </div>
-              <Calendar className="w-8 h-8 text-purple-600" />
+              <Calendar className="w-8 h-8 text-green-600" />
             </div>
           </CardContent>
         </Card>
@@ -351,7 +351,7 @@ export default function ScheduledPosts() {
                       <Badge className={getStatusColor(post.status)}>{post.status}</Badge>
                       <Badge className={getTypeColor(post.type)}>{post.type}</Badge>
                       {post.recurring?.enabled && (
-                        <Badge variant="outline" className="bg-purple-50 text-purple-700">
+                        <Badge variant="outline" className="bg-green-50 text-green-700">
                           Recurring
                         </Badge>
                       )}
@@ -373,7 +373,7 @@ export default function ScheduledPosts() {
                       <span>by {post.author}</span>
                       <span>Created: {post.createdDate}</span>
                       {post.recurring?.enabled && (
-                        <span className="flex items-center text-purple-600">
+                        <span className="flex items-center text-green-600">
                           <Calendar className="w-4 h-4 mr-1" />
                           {post.recurring.frequency}
                         </span>
@@ -387,7 +387,7 @@ export default function ScheduledPosts() {
                       </Button>
                     )}
                     {post.status === "failed" && (
-                      <Button size="sm" variant="ghost" className="text-blue-600">
+                      <Button size="sm" variant="ghost" className="text-amber-600">
                         <Upload className="w-4 h-4" />
                       </Button>
                     )}

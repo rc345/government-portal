@@ -155,9 +155,9 @@ export default function ContentManagement() {
   const getTypeIcon = (type: string) => {
     switch (type) {
       case "news":
-        return <FileText className="w-4 h-4 text-blue-600" />
+        return <FileText className="w-4 h-4 text-amber-600" />
       case "speech":
-        return <Mic className="w-4 h-4 text-purple-600" />
+        return <Mic className="w-4 h-4 text-green-600" />
       case "report":
         return <FileDown className="w-4 h-4 text-orange-600" />
       default:
@@ -215,7 +215,7 @@ export default function ContentManagement() {
                 <p className="text-sm font-medium text-gray-600">Total Content</p>
                 <p className="text-2xl font-bold text-gray-900">{contentItems.length}</p>
               </div>
-              <FileText className="w-8 h-8 text-blue-600" />
+              <FileText className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -254,7 +254,7 @@ export default function ContentManagement() {
                   {contentItems.filter((item) => item.type === "news").length}
                 </p>
               </div>
-              <FileText className="w-8 h-8 text-blue-600" />
+              <FileText className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>

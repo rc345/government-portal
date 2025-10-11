@@ -112,8 +112,8 @@ export default function PlatformPage() {
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Briefcase className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Briefcase className="w-8 h-8 text-amber-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">Economic Diplomacy</h3>
                 <p className="text-gray-600">
@@ -136,8 +136,8 @@ export default function PlatformPage() {
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">Youth Empowerment</h3>
                 <p className="text-gray-600">
@@ -267,7 +267,7 @@ export default function PlatformPage() {
               <h3 className="text-2xl font-bold mb-6 text-gray-900">Constituency Development Priorities</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Target className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -279,7 +279,7 @@ export default function PlatformPage() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Target className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -291,7 +291,7 @@ export default function PlatformPage() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Target className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -303,7 +303,7 @@ export default function PlatformPage() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Target className="w-5 h-5 text-white" />
                   </div>
                   <div>

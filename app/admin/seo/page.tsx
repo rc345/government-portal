@@ -258,7 +258,7 @@ export default function SEOMetadata() {
                 <p className="text-sm font-medium text-gray-600">Average SEO Score</p>
                 <p className={`text-2xl font-bold ${getScoreColor(averageScore)}`}>{averageScore}/100</p>
               </div>
-              <BarChart3 className="w-8 h-8 text-blue-600" />
+              <BarChart3 className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -291,7 +291,7 @@ export default function SEOMetadata() {
                 <p className="text-sm font-medium text-gray-600">Tracked Keywords</p>
                 <p className="text-2xl font-bold text-gray-900">{keywords.length}</p>
               </div>
-              <Target className="w-8 h-8 text-purple-600" />
+              <Target className="w-8 h-8 text-green-600" />
             </div>
           </CardContent>
         </Card>

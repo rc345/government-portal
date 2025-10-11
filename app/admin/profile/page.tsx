@@ -127,11 +127,11 @@ export default function AdminProfile() {
   const getActivityIcon = (type: string) => {
     switch (type) {
       case "content":
-        return <Edit className="w-4 h-4 text-blue-600" />
+        return <Edit className="w-4 h-4 text-amber-600" />
       case "media":
         return <Camera className="w-4 h-4 text-green-600" />
       case "user":
-        return <User className="w-4 h-4 text-purple-600" />
+        return <User className="w-4 h-4 text-green-600" />
       case "auth":
         return <Shield className="w-4 h-4 text-orange-600" />
       default:

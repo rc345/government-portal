@@ -201,7 +201,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <BookOpen className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
@@ -292,7 +292,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <Users className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
@@ -354,8 +354,8 @@ export default function AboutPage() {
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-amber-600" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-900">NUGS President</h3>
                 <p className="text-gray-600 text-sm mb-2">University of Ghana</p>

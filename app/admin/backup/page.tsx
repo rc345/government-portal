@@ -112,7 +112,7 @@ export default function BackupRestore() {
       case "completed":
         return <CheckCircle className="w-4 h-4 text-green-600" />
       case "in-progress":
-        return <RefreshCw className="w-4 h-4 text-blue-600 animate-spin" />
+        return <RefreshCw className="w-4 h-4 text-amber-600 animate-spin" />
       case "failed":
         return <AlertCircle className="w-4 h-4 text-red-600" />
       default:
@@ -125,7 +125,7 @@ export default function BackupRestore() {
       case "completed":
         return "bg-green-100 text-green-800"
       case "in-progress":
-        return "bg-blue-100 text-blue-800"
+        return "bg-amber-100 text-amber-800"
       case "failed":
         return "bg-red-100 text-red-800"
       default:
@@ -136,9 +136,9 @@ export default function BackupRestore() {
   const getTypeIcon = (type: string) => {
     switch (type) {
       case "full":
-        return <Shield className="w-5 h-5 text-purple-600" />
+        return <Shield className="w-5 h-5 text-green-600" />
       case "content":
-        return <Database className="w-5 h-5 text-blue-600" />
+        return <Database className="w-5 h-5 text-amber-600" />
       case "media":
         return <Archive className="w-5 h-5 text-green-600" />
       case "database":
@@ -181,7 +181,7 @@ export default function BackupRestore() {
                 <p className="text-sm font-medium text-gray-600">Total Backups</p>
                 <p className="text-2xl font-bold text-gray-900">{backups.length}</p>
               </div>
-              <Archive className="w-8 h-8 text-blue-600" />
+              <Archive className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -203,7 +203,7 @@ export default function BackupRestore() {
                 <p className="text-sm font-medium text-gray-600">Storage Used</p>
                 <p className="text-2xl font-bold text-gray-900">4.2 GB</p>
               </div>
-              <HardDrive className="w-8 h-8 text-purple-600" />
+              <HardDrive className="w-8 h-8 text-green-600" />
             </div>
           </CardContent>
         </Card>
@@ -352,15 +352,15 @@ export default function BackupRestore() {
               </div>
               <Badge className="bg-green-100 text-green-800">Healthy</Badge>
             </div>
-            <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
+            <div className="flex items-center justify-between p-3 bg-amber-50 rounded-lg">
               <div className="flex items-center space-x-3">
-                <HardDrive className="w-5 h-5 text-blue-600" />
+                <HardDrive className="w-5 h-5 text-amber-600" />
                 <div>
                   <p className="text-sm font-medium text-gray-900">Storage Space</p>
                   <p className="text-xs text-gray-600">15.8 GB available</p>
                 </div>
               </div>
-              <Badge className="bg-blue-100 text-blue-800">Good</Badge>
+              <Badge className="bg-amber-100 text-amber-800">Good</Badge>
             </div>
             <div className="flex items-center justify-between p-3 bg-yellow-50 rounded-lg">
               <div className="flex items-center space-x-3">

@@ -75,7 +75,7 @@ export default function AdminDashboard() {
       name: "Add New Content",
       href: "/admin/content/new",
       icon: FileText,
-      color: "bg-blue-500",
+      color: "bg-amber-500",
       description: "Create new pages or posts",
     },
     {
@@ -89,7 +89,7 @@ export default function AdminDashboard() {
       name: "Schedule Post",
       href: "/admin/schedule/new",
       icon: Calendar,
-      color: "bg-purple-500",
+      color: "bg-green-500",
       description: "Plan future content",
     },
     {
@@ -135,8 +135,8 @@ export default function AdminDashboard() {
                   <span>+2 this month</span>
                 </div>
               </div>
-              <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center">
-                <FileText className="w-7 h-7 text-blue-600" />
+              <div className="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center">
+                <FileText className="w-7 h-7 text-amber-600" />
               </div>
             </div>
           </CardContent>
@@ -171,8 +171,8 @@ export default function AdminDashboard() {
                   <span>+8.2% from last month</span>
                 </div>
               </div>
-              <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center">
-                <Eye className="w-7 h-7 text-purple-600" />
+              <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center">
+                <Eye className="w-7 h-7 text-green-600" />
               </div>
             </div>
           </CardContent>
@@ -251,17 +251,17 @@ export default function AdminDashboard() {
                   <div
                     className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                       activity.type === "update"
-                        ? "bg-blue-100"
+                        ? "bg-amber-100"
                         : activity.type === "upload"
                           ? "bg-green-100"
                           : activity.type === "user"
-                            ? "bg-purple-100"
+                            ? "bg-green-100"
                             : "bg-gray-100"
                     }`}
                   >
-                    {activity.type === "update" && <FileText className="w-5 h-5 text-blue-600" />}
+                    {activity.type === "update" && <FileText className="w-5 h-5 text-amber-600" />}
                     {activity.type === "upload" && <ImageIcon className="w-5 h-5 text-green-600" />}
-                    {activity.type === "user" && <Users className="w-5 h-5 text-purple-600" />}
+                    {activity.type === "user" && <Users className="w-5 h-5 text-green-600" />}
                     {activity.type === "system" && <CheckCircle className="w-5 h-5 text-gray-600" />}
                   </div>
                   <div className="flex-1 min-w-0">
@@ -305,17 +305,17 @@ export default function AdminDashboard() {
                 <Badge className="bg-green-100 text-green-800 border-green-200">Online</Badge>
               </div>
 
-              <div className="flex items-center justify-between p-4 bg-blue-50 rounded-xl border border-blue-200">
+              <div className="flex items-center justify-between p-4 bg-amber-50 rounded-xl border border-blue-200">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-blue-600" />
+                  <div className="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-amber-600" />
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-gray-900">Last Backup</p>
                     <p className="text-xs text-gray-600">{stats.lastBackup}</p>
                   </div>
                 </div>
-                <Badge className="bg-blue-100 text-blue-800 border-blue-200">Completed</Badge>
+                <Badge className="bg-amber-100 text-amber-800 border-blue-200">Completed</Badge>
               </div>
 
               <div className="flex items-center justify-between p-4 bg-yellow-50 rounded-xl border border-yellow-200">
@@ -331,17 +331,17 @@ export default function AdminDashboard() {
                 <Badge className="bg-yellow-100 text-yellow-800 border-yellow-200">Review</Badge>
               </div>
 
-              <div className="flex items-center justify-between p-4 bg-purple-50 rounded-xl border border-purple-200">
+              <div className="flex items-center justify-between p-4 bg-green-50 rounded-xl border border-purple-200">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center">
-                    <Calendar className="w-5 h-5 text-purple-600" />
+                  <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                    <Calendar className="w-5 h-5 text-green-600" />
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-gray-900">Scheduled Posts</p>
                     <p className="text-xs text-gray-600">{stats.scheduledPosts} posts scheduled</p>
                   </div>
                 </div>
-                <Badge className="bg-purple-100 text-purple-800 border-purple-200">Scheduled</Badge>
+                <Badge className="bg-green-100 text-green-800 border-purple-200">Scheduled</Badge>
               </div>
             </div>
           </CardContent>
@@ -362,11 +362,11 @@ export default function AdminDashboard() {
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
-              <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Page Speed</h3>
-              <p className="text-2xl font-bold text-blue-600">94/100</p>
+              <p className="text-2xl font-bold text-amber-600">94/100</p>
               <p className="text-sm text-gray-600">Excellent performance</p>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
@@ -378,11 +378,11 @@ export default function AdminDashboard() {
               <p className="text-sm text-gray-600">Optimized well</p>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
-              <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">User Experience</h3>
-              <p className="text-2xl font-bold text-purple-600">96/100</p>
+              <p className="text-2xl font-bold text-green-600">96/100</p>
               <p className="text-sm text-gray-600">Great usability</p>
             </div>
           </div>

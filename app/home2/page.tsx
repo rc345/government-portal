@@ -583,7 +583,7 @@ export default function Home2Page() {
                     <MessageSquare className="w-4 h-4" />
                     <span>45</span>
                   </span>
-                  <span className="flex items-center space-x-1 hover:text-blue-600 cursor-pointer transition-colors">
+                  <span className="flex items-center space-x-1 hover:text-amber-600 cursor-pointer transition-colors">
                     <Share2 className="w-4 h-4" />
                     <span>12</span>
                   </span>
@@ -620,7 +620,7 @@ export default function Home2Page() {
                     <MessageSquare className="w-4 h-4" />
                     <span>78</span>
                   </span>
-                  <span className="flex items-center space-x-1 hover:text-blue-600 cursor-pointer transition-colors">
+                  <span className="flex items-center space-x-1 hover:text-amber-600 cursor-pointer transition-colors">
                     <Share2 className="w-4 h-4" />
                     <span>23</span>
                   </span>
@@ -657,7 +657,7 @@ export default function Home2Page() {
                     <MessageSquare className="w-4 h-4" />
                     <span>34</span>
                   </span>
-                  <span className="flex items-center space-x-1 hover:text-blue-600 cursor-pointer transition-colors">
+                  <span className="flex items-center space-x-1 hover:text-amber-600 cursor-pointer transition-colors">
                     <Share2 className="w-4 h-4" />
                     <span>8</span>
                   </span>

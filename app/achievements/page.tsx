@@ -183,7 +183,7 @@ export default function AchievementsPage() {
                           className={`${
                             achievement.category === 'Digital Innovation' ? 'bg-green-100 text-green-800' :
                             achievement.category === 'Economic Diplomacy' ? 'bg-green-100 text-green-800' :
-                            achievement.category === 'International Relations' ? 'bg-purple-100 text-purple-800' :
+                            achievement.category === 'International Relations' ? 'bg-green-100 text-green-800' :
                             'bg-amber-100 text-amber-800'
                           }`}
                         >

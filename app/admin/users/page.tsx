@@ -97,9 +97,9 @@ export default function UserManagement() {
 
   const roles = [
     { name: "Super Administrator", color: "bg-red-100 text-red-800", permissions: "Full Access" },
-    { name: "Content Editor", color: "bg-blue-100 text-blue-800", permissions: "Content Management" },
+    { name: "Content Editor", color: "bg-amber-100 text-amber-800", permissions: "Content Management" },
     { name: "Media Manager", color: "bg-green-100 text-green-800", permissions: "Media Management" },
-    { name: "News Editor", color: "bg-purple-100 text-purple-800", permissions: "News & Social Media" },
+    { name: "News Editor", color: "bg-green-100 text-green-800", permissions: "News & Social Media" },
     { name: "Viewer", color: "bg-gray-100 text-gray-800", permissions: "Read Only" },
   ]
 
@@ -153,7 +153,7 @@ export default function UserManagement() {
                 <p className="text-sm font-medium text-gray-600">Total Users</p>
                 <p className="text-2xl font-bold text-gray-900">{users.length}</p>
               </div>
-              <User className="w-8 h-8 text-blue-600" />
+              <User className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -190,7 +190,7 @@ export default function UserManagement() {
                 <p className="text-sm font-medium text-gray-600">Roles</p>
                 <p className="text-2xl font-bold text-gray-900">{roles.length}</p>
               </div>
-              <Shield className="w-8 h-8 text-purple-600" />
+              <Shield className="w-8 h-8 text-green-600" />
             </div>
           </CardContent>
         </Card>

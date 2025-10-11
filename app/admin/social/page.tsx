@@ -166,9 +166,9 @@ export default function SocialMediaManagement() {
       case "twitter":
         return <Twitter className="w-4 h-4 text-blue-500" />
       case "facebook":
-        return <Facebook className="w-4 h-4 text-blue-600" />
+        return <Facebook className="w-4 h-4 text-amber-600" />
       case "linkedin":
-        return <Linkedin className="w-4 h-4 text-blue-700" />
+        return <Linkedin className="w-4 h-4 text-amber-700" />
       case "instagram":
         return <Instagram className="w-4 h-4 text-pink-500" />
       default:
@@ -181,7 +181,7 @@ export default function SocialMediaManagement() {
       case "published":
         return "bg-green-100 text-green-800"
       case "scheduled":
-        return "bg-blue-100 text-blue-800"
+        return "bg-amber-100 text-amber-800"
       case "draft":
         return "bg-gray-100 text-gray-800"
       default:
@@ -194,7 +194,7 @@ export default function SocialMediaManagement() {
       case "published":
         return <CheckCircle className="w-4 h-4 text-green-600" />
       case "scheduled":
-        return <Clock className="w-4 h-4 text-blue-600" />
+        return <Clock className="w-4 h-4 text-amber-600" />
       case "draft":
         return <Edit className="w-4 h-4 text-gray-600" />
       default:
@@ -233,7 +233,7 @@ export default function SocialMediaManagement() {
                 <p className="text-sm font-medium text-gray-600">Total Posts</p>
                 <p className="text-2xl font-bold text-gray-900">{socialPosts.length}</p>
               </div>
-              <Share2 className="w-8 h-8 text-blue-600" />
+              <Share2 className="w-8 h-8 text-amber-600" />
             </div>
           </CardContent>
         </Card>
@@ -257,7 +257,7 @@ export default function SocialMediaManagement() {
                   {(totalEngagement.likes + totalEngagement.shares + totalEngagement.comments).toLocaleString()}
                 </p>
               </div>
-              <TrendingUp className="w-8 h-8 text-purple-600" />
+              <TrendingUp className="w-8 h-8 text-green-600" />
             </div>
           </CardContent>
         </Card>

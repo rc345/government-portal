@@ -234,8 +234,8 @@ export default function NorthTonguPortal() {
             <Card className="hover:shadow-lg transition-shadow cursor-pointer border-l-4 border-l-blue-500">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <FileText className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
+                    <FileText className="w-6 h-6 text-amber-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Document Request</h3>
@@ -354,7 +354,7 @@ export default function NorthTonguPortal() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Building className="w-5 h-5 text-blue-600" />
+                    <Building className="w-5 h-5 text-amber-600" />
                     <span>Development Projects</span>
                   </CardTitle>
                 </CardHeader>
@@ -427,9 +427,9 @@ export default function NorthTonguPortal() {
                     
                     <Input placeholder="Your contact number" />
                     
-                    <div className="flex items-center space-x-2 p-3 bg-blue-50 rounded-lg">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <span className="text-sm text-blue-700">GPS location will be automatically captured</span>
+                    <div className="flex items-center space-x-2 p-3 bg-amber-50 rounded-lg">
+                      <MapPin className="w-5 h-5 text-amber-600" />
+                      <span className="text-sm text-amber-700">GPS location will be automatically captured</span>
                     </div>
                     
                     <Button className="w-full bg-red-600 hover:bg-red-700">
@@ -442,7 +442,7 @@ export default function NorthTonguPortal() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-2">
-                      <Clock className="w-5 h-5 text-blue-600" />
+                      <Clock className="w-5 h-5 text-amber-600" />
                       <span>Recent Emergency Reports</span>
                     </CardTitle>
                   </CardHeader>
@@ -500,7 +500,7 @@ export default function NorthTonguPortal() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-2">
-                      <FileText className="w-5 h-5 text-blue-600" />
+                      <FileText className="w-5 h-5 text-amber-600" />
                       <span>Request Documents</span>
                     </CardTitle>
                   </CardHeader>
@@ -539,16 +539,16 @@ export default function NorthTonguPortal() {
                       </SelectContent>
                     </Select>
                     
-                    <div className="p-4 bg-blue-50 rounded-lg">
+                    <div className="p-4 bg-amber-50 rounded-lg">
                       <h4 className="font-medium text-blue-900 mb-2">Processing Times</h4>
-                      <ul className="text-sm text-blue-700 space-y-1">
+                      <ul className="text-sm text-amber-700 space-y-1">
                         <li>• Letters: 2-3 business days</li>
                         <li>• Birth certificates: 5-7 business days</li>
                         <li>• Verification letters: 1-2 business days</li>
                       </ul>
                     </div>
                     
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    <Button className="w-full bg-amber-600 hover:bg-blue-700">
                       <FileText className="w-4 h-4 mr-2" />
                       Submit Document Request
                     </Button>
@@ -656,12 +656,12 @@ export default function NorthTonguPortal() {
                         ))}
                       </div>
                       
-                      <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+                      <div className="mt-6 p-4 bg-amber-50 rounded-lg">
                         <h4 className="font-medium text-blue-900 mb-2">Price Alert Service</h4>
-                        <p className="text-sm text-blue-700 mb-3">Get SMS notifications when prices change significantly</p>
+                        <p className="text-sm text-amber-700 mb-3">Get SMS notifications when prices change significantly</p>
                         <div className="flex space-x-2">
                           <Input placeholder="Your phone number" className="flex-1" />
-                          <Button size="sm" className="bg-blue-600 hover:bg-blue-700">Subscribe</Button>
+                          <Button size="sm" className="bg-amber-600 hover:bg-blue-700">Subscribe</Button>
                         </div>
                       </div>
                     </CardContent>
@@ -727,7 +727,7 @@ export default function NorthTonguPortal() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Building className="w-5 h-5 text-blue-600" />
+                    <Building className="w-5 h-5 text-amber-600" />
                     <span>Development Projects</span>
                   </CardTitle>
                 </CardHeader>
@@ -866,7 +866,7 @@ export default function NorthTonguPortal() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-2">
-                      <Users className="w-5 h-5 text-blue-600" />
+                      <Users className="w-5 h-5 text-amber-600" />
                       <span>Community Feedback</span>
                     </CardTitle>
                   </CardHeader>
@@ -890,7 +890,7 @@ export default function NorthTonguPortal() {
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    <Button className="w-full bg-amber-600 hover:bg-blue-700">
                       Submit Feedback
                     </Button>
                     
@@ -904,12 +904,12 @@ export default function NorthTonguPortal() {
                           </p>
                           <span className="text-xs text-green-600">2 days ago</span>
                         </div>
-                        <div className="p-3 bg-blue-50 rounded-lg">
+                        <div className="p-3 bg-amber-50 rounded-lg">
                           <h5 className="font-medium text-blue-900">Health Center Hours Extended</h5>
-                          <p className="text-sm text-blue-700">
+                          <p className="text-sm text-amber-700">
                             Based on your feedback, the Mepe Health Center now operates until 10 PM on weekdays.
                           </p>
-                          <span className="text-xs text-blue-600">1 week ago</span>
+                          <span className="text-xs text-amber-600">1 week ago</span>
                         </div>
                       </div>
                     </div>

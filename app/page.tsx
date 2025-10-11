@@ -508,7 +508,7 @@ export default function HomePage() {
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <CardContent className="p-6">
-                <Badge className="mb-2 bg-blue-100 text-blue-800">International Relations</Badge>
+                <Badge className="mb-2 bg-amber-100 text-amber-800">International Relations</Badge>
                 <h3 className="text-lg font-semibold mb-2 text-gray-900">Strengthening Ghana-Middle East Relations</h3>
                 <p className="text-gray-600 text-sm mb-4">
                   High-level diplomatic meetings to enhance bilateral cooperation and economic partnerships.
@@ -548,7 +548,7 @@ export default function HomePage() {
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <CardContent className="p-6">
-                <Badge className="mb-2 bg-purple-100 text-purple-800">Community</Badge>
+                <Badge className="mb-2 bg-green-100 text-green-800">Community</Badge>
                 <h3 className="text-lg font-semibold mb-2 text-gray-900">North Tongu Constituency Engagement</h3>
                 <p className="text-gray-600 text-sm mb-4">
                   Continued commitment to serving the people of North Tongu with regular community interactions.
