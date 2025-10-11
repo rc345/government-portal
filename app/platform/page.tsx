@@ -337,7 +337,7 @@ export default function PlatformPage() {
                   <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Operation Recover All Loot (ORAL)</h3>
-                <p className="text-blue-200 text-sm">
+                <p className="text-green-200 text-sm">
                   Chairman of President Mahama's flagship anti-corruption initiative to recover misappropriated state
                   resources.
                 </p>
@@ -349,7 +349,7 @@ export default function PlatformPage() {
                   <Target className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Transparency Initiatives</h3>
-                <p className="text-blue-200 text-sm">
+                <p className="text-green-200 text-sm">
                   Implementing clear KPIs for diplomatic missions and ensuring accountability in government operations.
                 </p>
               </CardContent>
@@ -360,7 +360,7 @@ export default function PlatformPage() {
                   <Lightbulb className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Ethical Leadership</h3>
-                <p className="text-blue-200 text-sm">
+                <p className="text-green-200 text-sm">
                   Promoting ethical standards and integrity in public service at all levels of government.
                 </p>
               </CardContent>

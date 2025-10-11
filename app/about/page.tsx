@@ -393,21 +393,21 @@ export default function AboutPage() {
                   <Globe className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Global Leadership</h3>
-                <p className="text-blue-200 text-sm">Advancing Ghana's influence in international forums</p>
+                <p className="text-green-200 text-sm">Advancing Ghana's influence in international forums</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Ethical Leadership</h3>
-                <p className="text-blue-200 text-sm">Transparency and accountability in public service</p>
+                <p className="text-green-200 text-sm">Transparency and accountability in public service</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Briefcase className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Economic Diplomacy</h3>
-                <p className="text-blue-200 text-sm">Promoting trade and investment opportunities</p>
+                <p className="text-green-200 text-sm">Promoting trade and investment opportunities</p>
               </div>
             </div>
           </div>

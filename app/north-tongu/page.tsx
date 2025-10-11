@@ -178,19 +178,19 @@ export default function NorthTonguPortal() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold">{quickStats.population}</div>
-                  <div className="text-sm text-blue-200">Population</div>
+                  <div className="text-sm text-green-200">Population</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold">{quickStats.communities}</div>
-                  <div className="text-sm text-blue-200">Communities</div>
+                  <div className="text-sm text-green-200">Communities</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold">{quickStats.serviceRequests}</div>
-                  <div className="text-sm text-blue-200">Active Requests</div>
+                  <div className="text-sm text-green-200">Active Requests</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold">24/7</div>
-                  <div className="text-sm text-blue-200">Service Hours</div>
+                  <div className="text-sm text-green-200">Service Hours</div>
                 </div>
               </div>
             </div>
