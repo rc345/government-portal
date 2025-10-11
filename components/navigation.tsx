@@ -2,7 +2,13 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Globe, Menu, X } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Globe, Menu, X, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -25,9 +31,24 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">
-              Home
-            </Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-amber-600 font-medium transition-colors">
+                Home
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link href="/" className="cursor-pointer">
+                    Home
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/home2" className="cursor-pointer">
+                    Home 2
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Link href="/about" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">
               About
             </Link>
@@ -69,6 +90,13 @@ export function Navigation() {
                 onClick={() => setIsOpen(false)}
               >
                 Home
+              </Link>
+              <Link
+                href="/home2"
+                className="text-gray-700 hover:text-amber-600 font-medium py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Home 2
               </Link>
               <Link
                 href="/about"
