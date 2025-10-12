@@ -1,19 +1,33 @@
 import { Resend } from 'resend'
 import nodemailer from 'nodemailer'
 
-// Initialize Resend (preferred)
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Lazy initialize Resend only when needed (not at module load time)
+let resendInstance: Resend | null = null
+function getResend(): Resend | null {
+  if (!process.env.RESEND_API_KEY) return null
+  if (!resendInstance) {
+    resendInstance = new Resend(process.env.RESEND_API_KEY)
+  }
+  return resendInstance
+}
 
-// Fallback to Nodemailer
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: process.env.SMTP_SECURE === 'true',
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-})
+// Lazy initialize Nodemailer only when needed
+let transporterInstance: nodemailer.Transporter | null = null
+function getTransporter(): nodemailer.Transporter | null {
+  if (!process.env.SMTP_HOST) return null
+  if (!transporterInstance) {
+    transporterInstance = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT || '587'),
+      secure: process.env.SMTP_SECURE === 'true',
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    })
+  }
+  return transporterInstance
+}
 
 interface EmailTemplate {
   to: string | string[]
@@ -26,7 +40,8 @@ export class EmailService {
   static async sendEmail(template: EmailTemplate): Promise<boolean> {
     try {
       // Try Resend first
-      if (process.env.RESEND_API_KEY) {
+      const resend = getResend()
+      if (resend) {
         await resend.emails.send({
           from: process.env.FROM_EMAIL || 'noreply@ablakwa.gov.gh',
           to: Array.isArray(template.to) ? template.to : [template.to],
@@ -38,7 +53,8 @@ export class EmailService {
       }
 
       // Fallback to Nodemailer
-      if (process.env.SMTP_HOST) {
+      const transporter = getTransporter()
+      if (transporter) {
         await transporter.sendMail({
           from: process.env.FROM_EMAIL || 'noreply@ablakwa.gov.gh',
           to: template.to,
