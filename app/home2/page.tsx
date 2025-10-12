@@ -59,8 +59,8 @@ export default function Home2Page() {
 
       {/* Hero Section - Modern Layout */}
       <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-        {/* Background Image - Right Side (40%) */}
-        <div className="absolute right-0 top-0 w-[45%] h-full hidden lg:block">
+        {/* Background Image - Right Side (60%) */}
+        <div className="absolute right-0 top-0 w-[60%] h-full hidden lg:block">
           <Image
             src="/images/ablakwa-official.jpeg"
             alt="Hon. Samuel Okudzeto Ablakwa"
@@ -108,32 +108,18 @@ export default function Home2Page() {
                 </Button>
               </Link>
               <Link href="/about">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   variant="outline"
                   className="border-2 border-gray-300 hover:border-amber-600 hover:text-amber-600 px-8 py-6 text-lg font-semibold rounded-xl transition-all"
                 >
-                  Learn More
+                  About Me
                 </Button>
               </Link>
             </div>
 
-            {/* Rating/Stats Section */}
+            {/* Stats Section */}
             <div className="flex flex-wrap items-center gap-6 md:gap-8">
-              {/* Star Rating */}
-              <div className="flex flex-col">
-                <div className="flex items-center space-x-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-amber-500 text-amber-500" />
-                  ))}
-                </div>
-                <p className="text-sm font-medium text-gray-700">
-                  Trusted by Constituents
-                </p>
-              </div>
-
-              {/* Divider */}
-              <div className="h-12 w-px bg-gray-300"></div>
 
               {/* Achievements */}
               <div className="flex flex-col">
@@ -858,3 +844,4 @@ export default function Home2Page() {
     </div>
   )
 }
+

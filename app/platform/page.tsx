@@ -75,12 +75,12 @@ export default function PlatformPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-green-900 to-green-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-amber-600">Our Platform</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Vision for Ghana's Future</h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-green-100">
               A comprehensive agenda for diplomatic excellence, economic development, and transparent governance.
             </p>
           </div>
